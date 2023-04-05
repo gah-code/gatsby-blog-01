@@ -85,32 +85,31 @@ select {
         color: black;
         font-size: 1.125rem;
         font-family: "Roboto", Arial, Helvetica, sans-serif;
-         line-height: 1.7;
+        line-height: 1.7;
         font-weight: 400;
     }
     h1 {
         font-weight: 700;
-        font-size: 4rem;
+        font-size: 3rem;
         line-height: 1.09;
         margin-bottom: 1.5rem;
         color: black;
         @media (max-width: 59em) {
-           font-size: 3rem;
-           
+        font-size: 2.5rem;
         }
     }
     h2 {
         font-weight: 700;
-        font-size: 1.35rem;
+        font-size: 1.55rem;
         line-height: 1.8rem;
         color: black;
-        @media (min-width: 1200px) {
-            font-size: 1.45rem;
+        @media (max-width: 59em) {
+            font-size: 1.15rem;
         }
     }
 
     h3 {
-        font-size: 1rem;
+        font-size: 1.05rem;
     }
     a {
         display: inline-block;
@@ -155,9 +154,7 @@ select {
 
     
 
-  
-
-        @media (max-width: 84em) {
+    @media (max-width: 84em) {
         .container {
             column-gap: 5rem;
             row-gap: 7rem;

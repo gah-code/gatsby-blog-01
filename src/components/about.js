@@ -1,35 +1,41 @@
 import React from "react"
 import styled from "styled-components"
+import aboutImg from "../images/about.jpg"
 
 const StyledSection = styled.section`
-  /* margin: 5rem 1rem; */
-  /* background: #eff; */
-`
+  background: #eff;
 
-const StyledBox = styled.div`
-  padding-bottom: 2rem;
+  h2 {
+    padding-bottom: 0.25rem;
+  }
+
+  img {
+    max-width: 200px;
+    border-radius: 10px;
+  }
+
+  p {
+    font-size: 1rem;
+  }
 `
 
 const About = ({ content }) => {
   return (
     <StyledSection>
-      {" "}
       <div className="container grid grid--2-cols">
         {/* Grid One */}
-        <StyledBox>
-          <h2>What we do</h2>
-          <h3>Why I Photograph</h3>
+        <div>
+          <h2>About</h2>
           <p>
             Users can select their preferred time, location, photographer, style
             and our API will craft a plan that matches best with your selected
-            preferences.
+            preferences. Users can select their preferred time, location,
+            photographer, style and our API will craft a plan that matches best
+            with your selected preferences.
           </p>
-        </StyledBox>
+        </div>
         <div className="">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
-            quasi.
-          </p>
+          <img src={aboutImg} alt="" />
         </div>
       </div>
     </StyledSection>

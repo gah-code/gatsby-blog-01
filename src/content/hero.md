@@ -2,8 +2,8 @@
 greetings: "Hello"
 emoji: "👋"
 title: "I'm Gilbert"
-subtitlePrefix: "I develop and design in the bay area"
-subtitleHighlight: "Here are some things I've been building for the web."
+subtitlePrefix: "I develop and design in the"
+subtitleHighlight: "Bay area"
 ---
 
-Web Developer. Based in in the Bayarea.
+Here are some things I've been building for the web
