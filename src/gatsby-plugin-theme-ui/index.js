@@ -1,8 +1,13 @@
 // example theme file
 const theme = {
   colors: {
-    text: "#000",
+    text: "#333",
     background: "#3566",
+  },
+  fonts: {
+    body: "system-ui, sans-serif",
+    heading: "system-ui, sans-serif",
+    monospace: "Menlo, monospace",
   },
 
   badges: {

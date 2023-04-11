@@ -37,6 +37,18 @@ const About = ({ content }) => {
         <div className="">
           <img src={aboutImg} alt="" />
         </div>
+
+        <div className="">
+          <img src={aboutImg} alt="" />
+        </div>
+        <h2
+          sx={{
+            color: "primary",
+            fontFamily: "heading",
+          }}
+        >
+          Hello
+        </h2>
       </div>
     </StyledSection>
   )
