@@ -38,9 +38,6 @@ const About = ({ content }) => {
           <img src={aboutImg} alt="" />
         </div>
 
-        <div className="">
-          <img src={aboutImg} alt="" />
-        </div>
         <h2
           sx={{
             color: "primary",

@@ -21,6 +21,9 @@ const theme = {
       boxShadow: "inset 0 0 0 1px",
     },
   },
+  sizes: {
+    container: 768,
+  },
 }
 
 export default theme

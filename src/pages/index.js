@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Hero from "../components/hero"
 import About from "../components/about"
+import Slider from "../components/slider"
 
 // import Stack from "../components/stack"
 
@@ -14,6 +15,17 @@ const IndexPage = ({ data }) => {
       <Hero content={data.hero.edges[0].node} />
       {/* <Stack /> */}
       <About />
+      <Slider />
+      <div
+        sx={{
+          maxWidth: 212,
+          mx: "auto",
+          px: 3,
+          py: 4,
+        }}
+      >
+        Centered
+      </div>
     </Layout>
   )
 }
