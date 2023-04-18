@@ -1,6 +1,8 @@
 import React from "react"
 import { useRef } from "react"
 import { motion, useScroll } from "framer-motion"
+import { Grid } from "theme-ui"
+import { Box } from "theme-ui"
 import styled from "styled-components"
 import ImgThree from "../images/about.jpg"
 
@@ -11,16 +13,18 @@ const Slider = props => {
   const { scrollXProgress } = useScroll({ container: ref })
   return (
     <>
-      <div
-        sx={{
-          display: "grid",
-          gridGap: 4,
-          gridTemplateColumns: ["auto", "1fr 256px"],
-        }}
-      >
-        <main>Main</main>
-        <aside>Sidebar</aside>
-      </div>
+      {/* <Grid gap={4} columns={[1, "2fr 2fr"]}>
+        <Box bg="primary">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        </Box>
+        <Box bg="muted">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto porro
+          totam veritatis dolore consequuntur fuga vel assumenda magni ipsa
+          dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+          porro totam veritatis dolore consequuntur fuga vel assumenda magni
+          ipsa dicta.
+        </Box>
+      </Grid> */}
       <section className="section-gallery">
         <h1>Title</h1>
         <div className="gallery">

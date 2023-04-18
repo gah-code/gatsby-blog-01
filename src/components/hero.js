@@ -11,6 +11,10 @@ const StyledSection = styled.section`
   .highlighted {
     box-shadow: inset 0 -2.5rem 0 #cdf3e1;
   }
+
+  .description {
+    padding: 0.5rem 0;
+  }
 `
 
 const Hero = ({ content }) => {

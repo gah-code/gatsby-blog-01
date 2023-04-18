@@ -4,6 +4,9 @@ import Layout from "../components/layout"
 import Hero from "../components/hero"
 import About from "../components/about"
 import Slider from "../components/slider"
+import { Grid } from "theme-ui"
+import { Box } from "theme-ui"
+import styled from "styled-components"
 
 // import Stack from "../components/stack"
 
@@ -15,6 +18,18 @@ const IndexPage = ({ data }) => {
       <Hero content={data.hero.edges[0].node} />
       {/* <Stack /> */}
       <About />
+      <Grid gap={4} columns={[1, "2fr 2fr"]}>
+        <Box bg="primary">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        </Box>
+        <Box bg="muted">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto porro
+          totam veritatis dolore consequuntur fuga vel assumenda magni ipsa
+          dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+          porro totam veritatis dolore consequuntur fuga vel assumenda magni
+          ipsa dicta.
+        </Box>
+      </Grid>
       <Slider />
       <div
         sx={{

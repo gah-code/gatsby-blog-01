@@ -83,19 +83,19 @@ select {
         padding: 0;
         background-color: white;
         color: black;
-        font-size: 1.125rem;
+        font-size: 1.128rem;
         font-family: "Roboto", Arial, Helvetica, sans-serif;
         line-height: 1.7;
         font-weight: 400;
     }
     h1 {
         font-weight: 700;
-        font-size: 3rem;
+        font-size: 3.2rem;
         line-height: 1.09;
         margin-bottom: 1.5rem;
         color: black;
         @media (max-width: 59em) {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
         }
     }
     h2 {
@@ -104,7 +104,7 @@ select {
         line-height: 1.8rem;
         color: black;
         @media (max-width: 59em) {
-            font-size: 1.15rem;
+            font-size: 1.20rem;
         }
     }
 
