@@ -1,11 +1,27 @@
 import { createGlobalStyle } from "styled-components"
 
 const GlobalStyle = createGlobalStyle`
+
+
 /* Box sizing rules */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+.fluid-type {
+  --fluid-type-min-size: 1;
+  --fluid-type-max-size: 2;
+  --fluid-type-min-screen: 20;
+  --fluid-type-max-screen: 88;
+
+  /* We multiply by 1rem to essentially stick a rem unit to a number. */
+  font-size: calc(
+    (var(--fluid-type-min-size) * 1rem) + (var(--fluid-type-max-size) - var(--fluid-type-min-size)) *
+      (100vw - (var(--fluid-type-min-screen) * 1rem)) /
+      (var(--fluid-type-max-screen) - var(--fluid-type-min-screen))
+  );
 }
 
 /* Remove default margin */
@@ -90,7 +106,8 @@ select {
     }
     h1 {
         font-weight: 700;
-        font-size: 3.2rem;
+        ${"" /* font-size: 3.2rem; */}
+        ${"" /* font-size: var(--fs-xl); */}
         line-height: 1.09;
         margin-bottom: 1.5rem;
         color: black;
@@ -98,13 +115,30 @@ select {
         font-size: 2.8rem;
         }
     }
+
+    h1.fluid-type {
+  --fluid-type-min-size: 2.2;
+  --fluid-type-max-size: 4.5;
+    }
+
+
+  h2.fluid-type {
+    --fluid-type-min-size: 1.4;
+    --fluid-type-max-size: 2;
+  }
+    
     h2 {
-        font-weight: 700;
-        font-size: 1.55rem;
+        font-weight: 600;
+        font-size: 1.65rem; 
         line-height: 1.8rem;
         color: black;
-        @media (max-width: 59em) {
-            font-size: 1.20rem;
+        max-width: 48rem;
+        {
+          @media (max-width: 59em) {
+            font-size: 1.25rem;
+            max-width: 45rem;
+            line-height: 1.5rem;
+        } 
         }
     }
 

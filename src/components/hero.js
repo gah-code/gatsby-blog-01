@@ -8,27 +8,47 @@ const skills = [
     color: "#2662EA",
   },
   {
+    skill: "SCSS",
+    level: "advanced",
+    color: "#2EA",
+  },
+  {
     skill: "JavaScript",
     level: "advanced",
     color: "#EFD81D",
   },
   {
-    skill: "Web Design",
-    level: "advanced",
-    color: "#C3DCAF",
-  },
-  {
-    skill: "Git and GitHub",
-    level: "intermediate",
-    color: "#E84F33",
-  },
-  {
-    skill: "React",
+    skill: "React+Redux",
     level: "advanced",
     color: "#60DAFB",
   },
   {
-    skill: "Svelte",
+    skill: "Gatsby",
+    level: "advanced",
+    color: "#60DAFB",
+  },
+  {
+    skill: "Theme UI",
+    level: "intermediate",
+    color: "#E843",
+  },
+  {
+    skill: "GraphQL",
+    level: "beginner",
+    color: "#FF0",
+  },
+  {
+    skill: "Storybook",
+    level: "beginner",
+    color: "#FF3B00",
+  },
+  {
+    skill: "Emotion",
+    level: "beginner",
+    color: "#FF3B00",
+  },
+  {
+    skill: "ally",
     level: "beginner",
     color: "#FF3B00",
   },
@@ -36,7 +56,7 @@ const skills = [
 
 const StyledSection = styled.section`
   .title {
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
   }
   .subtitle {
     margin-top: 0;
@@ -46,12 +66,12 @@ const StyledSection = styled.section`
   }
 
   .description {
-    padding: 0.5rem 0;
+    padding: 1.5rem 0;
   }
 
   .data {
-    padding: 32px;
-    padding-top: 24px;
+    padding: 32px 0;
+    padding-top: 10px;
   }
 
   .skill-list {
@@ -60,15 +80,17 @@ const StyledSection = styled.section`
     flex-wrap: wrap;
     gap: 8px;
     margin-top: 16px;
+    max-width: 35rem;
   }
 
   .skill {
-    padding: 2px 12px;
-    border-radius: 5px;
+    font-size: 14px;
+    padding: 4.5px 12px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     gap: 8px;
-    font-weight: 500;
+    font-weight: 600;
   }
 `
 
@@ -76,7 +98,7 @@ const Hero = ({ content }) => {
   const { frontmatter, rawMarkdownBody } = content
   return (
     <StyledSection id="hero">
-      <h1 className="title">
+      <h1 className="title fluid-type">
         {frontmatter.greetings}
         <span role="img" aria-label="emoji">
           {frontmatter.emoji}
@@ -110,11 +132,11 @@ function Skill({ skill, color, level }) {
   return (
     <div className="skill" style={{ backgroundColor: color }}>
       <span>{skill}</span>
-      <span>
+      {/* <span>
         {level === "beginner" && "👶"}
         {level === "intermediate" && "👍"}
         {level === "advanced" && "💪"}
-      </span>
+      </span> */}
     </div>
   )
 }
