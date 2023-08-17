@@ -1,7 +1,7 @@
 ---
 greetings: "Hola"
 emoji: ""
-title: "I'm Gilberto A. Haro"
+title: "I'm Gilbert"
 subtitlePrefix: "I've been surfing the web for all Front-End topics,"
 subtitleHighlight: "exploring & always stoked to learn sick ticks"
 ---

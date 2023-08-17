@@ -57,6 +57,7 @@ const skills = [
 const StyledSection = styled.section`
   .title {
     margin-bottom: 0.5rem;
+    padding-top: 4rem;
   }
   .subtitle {
     margin-top: 0;
