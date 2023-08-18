@@ -18,7 +18,7 @@ const skills = [
     color: "#EFD81D",
   },
   {
-    skill: "React+Redux",
+    skill: "React",
     level: "advanced",
     color: "#60DAFB",
   },
@@ -39,11 +39,6 @@ const skills = [
   },
   {
     skill: "Storybook",
-    level: "beginner",
-    color: "#FF3B00",
-  },
-  {
-    skill: "Emotion",
     level: "beginner",
     color: "#FF3B00",
   },
@@ -81,17 +76,32 @@ const StyledSection = styled.section`
     flex-wrap: wrap;
     gap: 8px;
     margin-top: 16px;
-    max-width: 35rem;
+    max-width: 32rem;
   }
 
   .skill {
-    font-size: 14px;
-    padding: 4.5px 12px;
-    border-radius: 10px;
+    font-size: 0.9rem;
+    padding: 0.2rem 0.8rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: inset 0 0 0 2px #444;
+
+    /* Put Transition on parent state */
+    transition: all 0.3s;
     display: flex;
     align-items: center;
-    gap: 8px;
-    font-weight: 600;
+    gap: 6px;
+  }
+  @media (max-width: 34em) {
+    .skill-list {
+      gap: 6px;
+      margin-top: 10px;
+    }
+    .skill {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.7rem;
+    }
   }
 `
 

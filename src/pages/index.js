@@ -9,14 +9,12 @@ import { Box } from "theme-ui"
 import styled from "styled-components"
 
 // import Stack from "../components/stack"
-
 // import { motion } from "framer-motion"
 
 const IndexPage = ({ data }) => {
   return (
     <Layout>
       <Hero content={data.hero.edges[0].node} />
-      {/* <Stack /> */}
       <About />
       <Grid gap={4} columns={[1, "2fr 2fr"]}>
         <Box bg="primary">

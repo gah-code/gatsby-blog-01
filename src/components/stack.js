@@ -14,7 +14,6 @@ import { Box } from "theme-ui"
 const StyledSection = styled.section`
   display: grid;
   width: 55%;
-  /* margin: 0 auto; */
 
   padding: 3rem 0 2rem 0;
   grid-template-columns: repeat(2, 1fr);

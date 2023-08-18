@@ -159,6 +159,22 @@ select {
         
     }
 
+    .btn,
+    .btn:link,
+    .btn:visited {
+      font-size: 2rem;
+      padding: 1.6rem 3.2rem;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+
+      /* Put Transition on parent state */
+      transition: all 0.3s;
+    }
+
     .container {
         max-width: 125rem;
         padding:  5rem 0;
