@@ -2,9 +2,10 @@ import React from "react"
 import { useRef } from "react"
 import { motion, useScroll } from "framer-motion"
 import { Grid } from "theme-ui"
-import { Box } from "theme-ui"
+import { Box, Heading } from "theme-ui"
 import styled from "styled-components"
 import ImgThree from "../images/about.jpg"
+import theme from "../gatsby-plugin-theme-ui"
 
 // import "./Gallery.styles.scss"
 
@@ -27,6 +28,16 @@ const Slider = props => {
       </Grid> */}
       <section className="section-gallery">
         <h1>Title</h1>
+        <Heading // apply both the heading styles and the color style
+          as="h2"
+          mb="2"
+          sx={{
+            ...theme.text.heading, // Merging the theme text.heading style
+            color: "primary", // Adding additional color style
+          }}
+        >
+          Heading 2
+        </Heading>
         <div className="gallery">
           <ul className="gallery__slider" ref={ref}>
             <li className="gallery__slider-item ">test</li>

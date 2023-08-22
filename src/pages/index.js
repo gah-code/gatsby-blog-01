@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import Hero from "../components/hero"
 import About from "../components/about"
 import Slider from "../components/slider"
-import { Grid } from "theme-ui"
+import { Grid, Heading, sx } from "theme-ui"
 import { Box } from "theme-ui"
 import styled from "styled-components"
 

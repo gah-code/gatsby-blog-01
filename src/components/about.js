@@ -39,20 +39,9 @@ const About = ({ content }) => {
             Heading 2
           </Heading>
 
-          <Heading as="h2" mb="2" sx={theme.text.heading}>
+          {/* <Heading as="h2" mb="2" sx={theme.text.heading}>
             Heading 1
-          </Heading>
-
-          <Heading // apply both the heading styles and the color style
-            as="h2"
-            mb="2"
-            sx={{
-              ...theme.text.heading, // Merging the theme text.heading style
-              color: "secondary", // Adding additional color style
-            }}
-          >
-            Heading 2
-          </Heading>
+          </Heading> */}
 
           <Text sx={theme.text.default}>
             This is a display text. Users can select their preferred time,
@@ -61,22 +50,6 @@ const About = ({ content }) => {
             preferred time, location, photographer, style and our API will craft
             a plan that matches best with your selected preferences.
           </Text>
-          {/* <h2
-            sx={{
-              color: "primary",
-              fontFamily: "heading",
-              fontSize: 64,
-            }}
-          >
-            Hello
-          </h2> */}
-          {/* <p>
-              Users can select their preferred time, location, photographer,
-              style and our API will craft a plan that matches best with your
-              selected preferences. Users can select their preferred time,
-              location, photographer, style and our API will craft a plan that
-              matches best with your selected preferences.
-            </p> */}
         </div>
         <div className="">
           <img src={aboutImg} alt="" />
