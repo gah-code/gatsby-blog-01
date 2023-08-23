@@ -1,7 +1,7 @@
 // example theme file
 const theme = {
   colors: {
-    text: "#333",
+    text: "#222",
     background: "#3566",
     primary: "#07c",
     secondary: "#0744",
@@ -24,7 +24,7 @@ const theme = {
   text: {
     default: {
       color: "text",
-      fontSize: 3,
+      fontSize: 2,
     },
     heading: {
       fontFamily: "heading",

@@ -51,8 +51,8 @@ const skills = [
 
 const StyledSection = styled.section`
   .title {
-    margin-bottom: 0.5rem;
-    padding-top: 4rem;
+    margin-bottom: 0.8rem;
+    padding-top: 3.5rem;
   }
   .subtitle {
     margin-top: 0;
@@ -62,7 +62,7 @@ const StyledSection = styled.section`
   }
 
   .description {
-    padding: 1.5rem 0;
+    padding: 1rem 0 0.5rem 0;
   }
 
   .data {

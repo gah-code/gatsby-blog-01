@@ -2,10 +2,10 @@ import React from "react"
 import styled from "styled-components"
 import aboutImg from "../images/about.jpg"
 import theme from "../gatsby-plugin-theme-ui"
-import { Heading, Text, sx } from "theme-ui"
+import { Heading, Text, sx, Container } from "theme-ui"
 
 const StyledSection = styled.section`
-  background: #eff;
+  /* background: #eff; */
 
   h2 {
     padding-bottom: 0.25rem;
@@ -33,22 +33,23 @@ const About = ({ content }) => {
               fontSize: [5, 5],
               color: "primary",
               fontFamily: "heading",
-              mb: 3, // margin-bottom
+              mb: 2, // margin-bottom
             }}
           >
-            Heading 2
+            About
           </Heading>
 
-          {/* <Heading as="h2" mb="2" sx={theme.text.heading}>
-            Heading 1
-          </Heading> */}
-
           <Text sx={theme.text.default}>
-            This is a display text. Users can select their preferred time,
-            location, photographer, style and our API will craft a plan that
-            matches best with your selected preferences. Users can select their
-            preferred time, location, photographer, style and our API will craft
-            a plan that matches best with your selected preferences.
+            Over the years, dating back to 2020, I have been fully committed to
+            building my web development skills. I have enrolled in numerous
+            courses that challenge me and equip me with the necessary knowledge
+            to build functional interfaces. After putting myself in a
+            bootcamp-like environment, I began my professional career as a web
+            developer at a non-profit organization. After that, I transitioned
+            into another role and company. Currently, I am taking on an
+            international front-end challenge, while continuing to deepen my
+            understanding of React, SCSS, and front-end architecture after
+            hours.
           </Text>
         </div>
         <div className="">
