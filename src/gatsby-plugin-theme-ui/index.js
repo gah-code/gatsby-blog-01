@@ -1,10 +1,10 @@
 // example theme file
 const theme = {
   colors: {
-    text: "#222",
-    background: "#3566",
-    primary: "#07c",
-    secondary: "#0744",
+    text: "#010B13",
+    background: "#F2F3F4",
+    primary: "#2A3439",
+    secondary: "#6C3082",
   },
   fonts: {
     body: "system-ui, sans-serif",
@@ -25,6 +25,7 @@ const theme = {
     default: {
       color: "text",
       fontSize: 2,
+      fontWeight: 500,
     },
     heading: {
       fontFamily: "heading",

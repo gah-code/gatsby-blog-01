@@ -19,7 +19,7 @@ const IndexPage = ({ data }) => {
       <Hero content={data.hero.edges[0].node} />
       <About />
       <Grid gap={3} columns={[1]}>
-        <Box sx={{ backgroundColor: "secondary", padding: 2 }}>
+        <Box sx={{ padding: 2 }}>
           <Heading
             as="h2"
             sx={{

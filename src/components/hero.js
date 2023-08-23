@@ -50,6 +50,7 @@ const skills = [
 ]
 
 const StyledSection = styled.section`
+  padding-bottom: 2rem;
   .title {
     margin-bottom: 0.8rem;
     padding-top: 3.5rem;

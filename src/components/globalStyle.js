@@ -36,6 +36,7 @@ blockquote,
 dl,
 dd {
   margin: 0;
+  text-wrap: balance;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -97,7 +98,7 @@ select {
         height: 100%;
         margin: 0;
         padding: 0;
-        background-color: white;
+        ${"" /* background-color: white; */}
         color: black;
         font-size: 1.128rem;
         font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -122,15 +123,12 @@ select {
     }
 
 
-  h2.fluid-type {
-    --fluid-type-min-size: 1.4;
-    --fluid-type-max-size: 2;
-  }
     
     h2 {
         font-weight: 600;
         font-size: 1.65rem; 
         line-height: 1.8rem;
+        margin-bottom: 1.2rem;
         color: black;
         max-width: 48rem;
         {
@@ -141,6 +139,11 @@ select {
         } 
         }
     }
+
+      h2.fluid-type {
+    --fluid-type-min-size: 2;
+    --fluid-type-max-size: 3;
+  }
 
     h3 {
         font-size: 1.05rem;
@@ -201,6 +204,8 @@ select {
     .grid--4-cols {
         grid-template-columns: repeat(4, 1fr);
     }
+
+
 
     /**************************/
 /* SECTION GALLERY */
@@ -288,20 +293,31 @@ select {
 
     @media (max-width: 75em) {
         .container {
-            column-gap: 4.5rem;
+            column-gap: 2rem;
             row-gap: 6.9rem;
         }
+
+   
+
+      
     }
 
     @media (max-width: 59em) {
         .container {
-            row-gap: 6.8rem;
+            row-gap: 6rem;
+            column-gap: 1rem;
+        }
+
+         .grid--2-cols,
+        .grid--3-cols,
+        .grid--4-cols {
+            grid-template-columns: 1fr;
         }
     }
 
     @media (max-width: 34em) {
         .container {
-            row-gap: 6.5rem;
+            row-gap: 5rem;
         }
         .grid--2-cols,
         .grid--3-cols,
@@ -309,7 +325,11 @@ select {
             grid-template-columns: 1fr;
         }
 
+
+  
+
 }
+
     
 `
 
