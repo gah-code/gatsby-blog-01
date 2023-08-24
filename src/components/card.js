@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-// import React from "react"
 import { motion } from "framer-motion"
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa"
 

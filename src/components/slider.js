@@ -6,26 +6,13 @@ import { Box, Heading } from "theme-ui"
 import styled from "styled-components"
 import ImgThree from "../images/about.jpg"
 import theme from "../gatsby-plugin-theme-ui"
-
-// import "./Gallery.styles.scss"
+import Card from "../components/card"
 
 const Slider = props => {
   const ref = useRef(null)
   const { scrollXProgress } = useScroll({ container: ref })
   return (
     <>
-      {/* <Grid gap={4} columns={[1, "2fr 2fr"]}>
-        <Box bg="primary">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-        </Box>
-        <Box bg="muted">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto porro
-          totam veritatis dolore consequuntur fuga vel assumenda magni ipsa
-          dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-          porro totam veritatis dolore consequuntur fuga vel assumenda magni
-          ipsa dicta.
-        </Box>
-      </Grid> */}
       <section className="section-gallery">
         <h1>Title</h1>
         <Heading // apply both the heading styles and the color style
@@ -51,7 +38,7 @@ const Slider = props => {
                 Explicabo, inventore.
               </p>
             </li>
-            <li>test</li>
+
             <li>test</li>
             <li>test</li>
             <li>
