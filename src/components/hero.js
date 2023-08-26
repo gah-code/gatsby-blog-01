@@ -5,12 +5,12 @@ const skills = [
   {
     skill: "HTML+CSS",
     level: "advanced",
-    color: "#2662EA",
+    color: "#72A0C1",
   },
   {
     skill: "SCSS",
     level: "advanced",
-    color: "#2EA",
+    color: "#F2C1D1",
   },
   {
     skill: "JavaScript",
@@ -25,7 +25,7 @@ const skills = [
   {
     skill: "Gatsby",
     level: "advanced",
-    color: "#60DAFB",
+    color: "#B57EDC",
   },
   {
     skill: "Theme UI",
@@ -35,7 +35,7 @@ const skills = [
   {
     skill: "GraphQL",
     level: "beginner",
-    color: "#FF0",
+    color: "#B57EDC",
   },
   {
     skill: "Storybook",
@@ -78,15 +78,18 @@ const StyledSection = styled.section`
     gap: 8px;
     margin-top: 16px;
     max-width: 32rem;
+    color: #263147;
   }
 
   .skill {
-    font-size: 0.9rem;
-    padding: 0.2rem 0.8rem;
+    font-size: 1rem;
+    padding: 0.2rem 0.86rem;
     border-radius: 25px;
     text-decoration: none;
     font-weight: 600;
-    box-shadow: inset 0 0 0 2px #444;
+    /* border: solid 1.9px #444; */
+    box-shadow: inset 0 0 0 1.9px #444;
+    /* box-shadow: 0px 5px 10px rgba(46, 29, 57, 0.2); */
 
     /* Put Transition on parent state */
     transition: all 0.3s;
@@ -100,7 +103,7 @@ const StyledSection = styled.section`
       margin-top: 10px;
     }
     .skill {
-      padding: 0.4rem 0.8rem;
+      padding: 0.4rem 0.81rem;
       font-size: 0.7rem;
     }
   }

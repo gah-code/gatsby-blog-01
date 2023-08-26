@@ -33,8 +33,15 @@ const samplePageLinks = [
 // import { motion } from "framer-motion"
 
 const IndexPage = ({ data }) => {
-  const heroContent = data.hero.edges[0].node
-  const aboutContent = data.about.edges[1].node
+  // const heroContent = data.hero.edges[0].node
+  // const aboutContent = data.about.edges[1].node
+  const heroContent = data.hero.edges.find(
+    edge => edge.node.frontmatter.id === 0
+  ).node
+  const aboutContent = data.about.edges.find(
+    edge => edge.node.frontmatter.id === 1
+  ).node
+  const aboutRawMarkdownBody = aboutContent.rawMarkdownBody
   return (
     <Layout>
       <Hero content={heroContent} />
@@ -70,6 +77,7 @@ export const pageQuery = graphql`
             emoji
             subtitlePrefix
             subtitleHighlight
+            id
           }
           rawMarkdownBody
         }
@@ -84,6 +92,7 @@ export const pageQuery = graphql`
             emoji
             subtitlePrefix
             subtitleHighlight
+            id
           }
           rawMarkdownBody
         }
