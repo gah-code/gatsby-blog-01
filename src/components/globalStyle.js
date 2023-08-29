@@ -98,7 +98,6 @@ select {
         height: 100%;
         margin: 0;
         padding: 0;
-        ${"" /* background-color: white; */}
         color: black;
         font-size: 1.128rem;
         font-family: "Roboto", Arial, Helvetica, sans-serif;

@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Hero from "../components/hero"
 import About from "../components/about"
+import Update from "../components/segments/update"
 import Slider from "../components/slider"
 import { Grid, Heading, sx, Text } from "theme-ui"
 import theme from "../gatsby-plugin-theme-ui"
@@ -42,6 +43,9 @@ const IndexPage = ({ data }) => {
     edge => edge.node.frontmatter.id === 1
   ).node
   const aboutRawMarkdownBody = aboutContent.rawMarkdownBody
+  const updateContent = data.update.edges.find(
+    edge => edge.node.frontmatter.id === 2
+  ).node
   return (
     <Layout>
       <Hero content={heroContent} />
@@ -57,9 +61,7 @@ const IndexPage = ({ data }) => {
         <br />
         {/* Edit <code>src/pages/index.js</code> to update this page. */}
       </p>
-
-      {/* <Grid gap={4} columns={[1, "5fr 2fr"]}> */}
-
+      <Update content={updateContent} />
       <Slider />
     </Layout>
   )
@@ -92,6 +94,22 @@ export const pageQuery = graphql`
             emoji
             subtitlePrefix
             subtitleHighlight
+            id
+          }
+          rawMarkdownBody
+        }
+      }
+    }
+    update: allMarkdownRemark {
+      edges {
+        node {
+          frontmatter {
+            title
+            greetings
+            emoji
+            subtitlePrefix
+            subtitleHighlight
+            list
             id
           }
           rawMarkdownBody
