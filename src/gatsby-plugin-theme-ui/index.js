@@ -19,6 +19,24 @@ const theme = {
     heading: 700,
     display: 900,
   },
+  styles: {
+    h1: {
+      fontSize: [48, 64],
+      fontFamily: "heading",
+      fontWeight: "heading",
+      color: "primary",
+      mt: 4,
+      mb: 2,
+    },
+    h2: {
+      fontSize: [32, 48],
+      fontFamily: "heading",
+      fontWeight: "heading",
+      color: "text",
+      mt: 4,
+      mb: 2,
+    },
+  },
   lineHeights: {
     body: 1.5,
     heading: 1.25,

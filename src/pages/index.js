@@ -48,6 +48,20 @@ const IndexPage = ({ data }) => {
   ).node
   return (
     <Layout>
+      <Heading
+        sx={{
+          ...theme.styles.h1,
+        }}
+      >
+        Your Heading Text Here
+      </Heading>
+      <Heading
+        sx={{
+          ...theme.styles.h2,
+        }}
+      >
+        Your Heading Text Here
+      </Heading>
       <Hero content={heroContent} />
       <About content={aboutContent} />
       <p>

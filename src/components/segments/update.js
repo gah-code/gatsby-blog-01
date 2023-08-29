@@ -3,6 +3,7 @@ import styled from "styled-components"
 import aboutImg from "../../images/about.jpg"
 import theme from "../../gatsby-plugin-theme-ui"
 import { graphql } from "gatsby"
+import { Link } from "gatsby"
 import { Heading, Text, sx, Container } from "theme-ui"
 
 const StyledSection = styled.section`
@@ -43,8 +44,23 @@ const StyledSection = styled.section`
   }
 `
 
+const posts = [
+  // An array of post objects with properties like id, slug, title, date, and excerpt
+  // Example: { id: 1, slug: '/post-1', title: 'Post 1', date: '2023-08-28', excerpt: '...' }
+  // ...
+
+  {
+    id: 1,
+    slug: "/post-1",
+    title: "Post 1",
+    date: "2023-08-28",
+    excerpt: "...",
+  },
+]
+
 const Update = ({ content }) => {
   const { frontmatter, rawMarkdownBody } = content
+
   return (
     <StyledSection>
       <div className="container grid grid--2-cols-other">
