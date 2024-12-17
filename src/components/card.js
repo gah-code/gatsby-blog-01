@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
-import { motion } from "framer-motion"
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa"
+// import { motion } from "framer-motion"
+// import { FaArrowLeft, FaArrowRight } from "react-icons/fa"
 
 // import "./card.scss"
 
